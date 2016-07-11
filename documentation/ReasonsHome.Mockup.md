@@ -2,7 +2,7 @@
 
 ## Ask a question
 
-Your name: <input type="text" size=10/><br/>
+Your name: [------------------]
 Your question: <input type="text" size=50/><br/>
 The original author (Optional): <input type="text" size=10/><br/>
 The source URL (Optional): <input type="text" size=50/><br/>
@@ -10,6 +10,7 @@ The source URL (Optional): <input type="text" size=50/><br/>
 <button type="button">Ask a question</button>
 
 \* TODO A smoother UI here would allow the user to enter the question and then fill in the other details later / dynamically.
+\* TODO The input boxes aren't rendering properly on GitHub
 
 ## Questions
 
