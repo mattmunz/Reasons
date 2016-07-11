@@ -2,15 +2,15 @@
 
 ## Ask a question
 
-Your name: [------------------]
-Your question: <input type="text" size=50/><br/>
-The original author (Optional): <input type="text" size=10/><br/>
-The source URL (Optional): <input type="text" size=50/><br/>
+Your name:                      [------------------]<br/>
+Your question:                  [------------------]<br/>
+The original author (Optional): [------------------]<br/>
+The source URL (Optional):      [------------------]<br/>
 
-<button type="button">Ask a question</button>
+[Ask a question]
 
 \* TODO A smoother UI here would allow the user to enter the question and then fill in the other details later / dynamically.
-\* TODO The input boxes aren't rendering properly on GitHub
+\* TODO The input boxes aren't rendering properly on GitHub. Markdown is awkward for mockups. Perhaps just switch to HTML...
 
 ## Questions
 
