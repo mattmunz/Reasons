@@ -21,7 +21,7 @@ On the page for the proposition, you could click "I agree", "I disagree", or "te
 "Voting is a responsibility of all citizens" or "Beltway experience is necessary for a 
 president to be successful".     
 
-This system seemed like a better way to make up my mind then dredging through news articles and 
+This system seemed like a better way to make up my mind than dredging through news articles and 
 books, which can be fun to read at times, but often contain lots of information I don't 
 really need. This makes sense as these sources are designed for a wide audience and generally don't leverage all of the flexibility w.r.t. content that HTML/HTTP offers.
 
