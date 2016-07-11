@@ -42,7 +42,7 @@ In contrast to those more traditional sources, this hypothetical website could b
 
 ## Design
 
-See [UI mockups](documentation/Design.md) for details.
+See the [design](documentation/Design.md) page for details.
 
 ## Use Cases
 
