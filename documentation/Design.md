@@ -1,7 +1,5 @@
 # Design
 
-See [UI mockups](documentation/Design.md) for details.
-
 ## Methodology
 
 The general approach is to start with the simplest system that can do anything useful in 
