@@ -64,21 +64,30 @@ See the [design](documentation/Design.md) page for details.
 
 ## TODO 
 
-* Prioritize this list
 * Implement the most basic use case (Questions support)
-  1. Make a service API and client
-     1. In-memory
+  1. Make a service API and client -- to run locally
+     1. In-memory -- Reuse Jot code
+        1. persons: POST, GET
+        2. questions: POST, GET
      2. With persistence 
   2. Implement Angular UI to access that API  
-* Move the design methodology -- should probably just be a link here to a general mattmunz 
-  methodology page
+* Prioritize this list
+* Add these questions
+  * Should I use Dropbox to replicate my github workspace?
+  * What is the Reasons project?
+  * Why should I be interested in the reasons project?
+  * Why should I contribute to the Reasons project?
+* Move the design methodology page -- should probably just be a link on the design page to a general mattmunz methodology page
 * This project needs a better name?
 * Identify more use cases
+  * Implement authentication
+  * Deploy to a shared instance (hosted, perhaps Firebase)
+  * Get a domain name  
   * Support for plain propositions
   * Support for supporting arguments
   * Support for arguments against the proposition
   * Implement the following arguments/questions "What is the Reasons project?", 
-    "Why should I be interested in the reasons project?", "Why should I get contribute to the Reasons project?"
+    "Why should I be interested in the reasons project?", "Why should I contribute to the Reasons project?"
   * Search of various kinds
   * Deduplication
   * Voting/moderation 
