@@ -27,7 +27,8 @@ All objects have a field like the following unless stated otherwise.
 
 ### PersonRepository
 
-* getOrCreate :: (Name) -> Person -- _TODO Authentication should be implemented here_
+* create :: (Name) -> Person -- _TODO Authentication should be used here to prevent impersonation._
+* get :: (Name) -> Person 
 
 ### QuestionRepository
 
@@ -36,17 +37,19 @@ All objects have a field like the following unless stated otherwise.
 
 ### Web Service APIs
 
-All responses in JSON.
+For the following methods, all responses/request bodies are in JSON.
 
 * reasons/api 
   * persons _-> PersonRepository TODO How to model lazy create functaionality?_
+     * GET: _-> PersonRepository.get_
+     * POST: _-> PersonRepository.create_  
   * questions _-> QuestionRepository_
-     * GET: _All questions in the repository_
-     * PUT?: _Create a question_ 
+     * GET: _-> QuestionRepository.get_
+     * POST: _-> QuestionRepository.create_ 
 
 ## UI 
 
-These [UI mockups](ReasonsHome.Mockup.md) are really rough but should give a sense of 
+These [UI mockups](ReasonsHome.Mockup.html) are really rough but should give a sense of 
 how the application is intended to work, structurally. 
 
 ## Author

@@ -64,20 +64,15 @@ See the [design](documentation/Design.md) page for details.
 
 ## TODO 
 
-* Publish
-* Outline the design for use case 1 -- finish the WS APIs
 * Prioritize this list
-* This page is getting long -- refactor it out
-* Replace the API design with standard description format like Swagger
-* This project needs a better name?
-* Explain the domain model syntax
+* Implement the most basic use case (Questions support)
+  1. Make a service API and client
+     1. In-memory
+     2. With persistence 
+  2. Implement Angular UI to access that API  
 * Move the design methodology -- should probably just be a link here to a general mattmunz 
   methodology page
-* Implement the most basic use case (Questions support)
-  * Implement mockups in markdown first
-  * Next, make a service API and client
-  * Then implement Angular UI to access that API  
-* Look into integration with Wikidata?
+* This project needs a better name?
 * Identify more use cases
   * Support for plain propositions
   * Support for supporting arguments
@@ -87,6 +82,9 @@ See the [design](documentation/Design.md) page for details.
   * Search of various kinds
   * Deduplication
   * Voting/moderation 
+* Explain the domain model syntax
+* Replace the API design with standard description format like Swagger
+* Look into integration with Wikidata?
 * ... 
 
 ## Contact
