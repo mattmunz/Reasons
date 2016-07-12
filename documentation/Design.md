@@ -49,7 +49,7 @@ For the following methods, all responses/request bodies are in JSON.
 
 ## UI 
 
-These [UI mockups](ReasonsHome.Mockup.html) are really rough but should give a sense of 
+These [UI mockups](https://cdn.rawgit.com/mattmunz/Reasons/master/documentation/ReasonsHome.Mockup.html) are really rough but should give a sense of 
 how the application is intended to work, structurally. 
 
 ## Author
