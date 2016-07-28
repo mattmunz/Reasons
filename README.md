@@ -65,10 +65,12 @@ See the [design](documentation/Design.md) page for details.
 ## TODO 
 
 * Implement the most basic use case (Questions support)
-  1. Make a service API and client -- to run locally
+  1. Make a service API and client -- to run locally, TDD
      1. In-memory -- Reuse Jot code
-        1. persons: POST, GET
-        2. questions: POST, GET
+         1. persons: 
+           1. POST -- continue at PersonsEndpointTest. Get it to pass...
+           2. GET 
+         2. questions: POST, GET
      2. With persistence 
   2. Implement Angular UI to access that API  
 * Prioritize this list
@@ -77,6 +79,8 @@ See the [design](documentation/Design.md) page for details.
   * What is the Reasons project?
   * Why should I be interested in the reasons project?
   * Why should I contribute to the Reasons project?
+  * Why did I publish the cli project?
+  * What's a good tutorial for the Reddit API?
 * Move the design methodology page -- should probably just be a link on the design page to a general mattmunz methodology page
 * This project needs a better name?
 * Identify more use cases
@@ -87,7 +91,7 @@ See the [design](documentation/Design.md) page for details.
   * Support for supporting arguments
   * Support for arguments against the proposition
   * Implement the following arguments/questions "What is the Reasons project?", 
-    "Why should I be interested in the reasons project?", "Why should I contribute to the Reasons project?"
+    "Why should I be interested in the reasons project?", "Why should I contribute to the Reasons project?", "should jury selection take demographics of the community into account?", and all questions from design mockup.
   * Search of various kinds
   * Deduplication
   * Voting/moderation 

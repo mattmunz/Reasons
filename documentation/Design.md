@@ -17,7 +17,7 @@ All objects have a field like the following unless stated otherwise.
 
 ### Person
 
-* Name 
+* Name (unique)
 
 ### Question
 
