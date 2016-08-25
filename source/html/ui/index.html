@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+
+<html lang="en-US">
+
+<head>
+
+  <link rel="stylesheet" href="reasons.css"/>
+
+  <script src="angular.js"></script>
+  <script src="reasons.js"></script>
+  <script src="reasonsController.js"></script>
+</head>
+
+<body>
+
+  <div ng-app="reasons" ng-controller="reasonsController">
+  
+    <h1>Reasons</h1>
+  
+    <h2>Welcome</h2>
+    
+    <!-- TODO Needs to account for users not logged in. -->
+    <p>Hello {{user.firstName}} {{user.lastName}}!</p>
+    
+    <p>
+      The primary aim of the Reasons project is to enable people to learn and share new 
+      ideas efficiently. You can use this application to find, collect, and refine questions, 
+      answers, and reasons.
+    </p> 
+    
+    <h2>Ask a question</h2>
+    
+    <table>
+      <tbody>
+        <tr>
+          <td>Your name:</td>
+          <td><input name="newQuestionQuestionerName" ng-model="newQuestionQuestionerName" type="text" size=25/></td>
+        </tr>
+        <tr><td>The original author (Optional):</td><td><input type="text" size=25/></td></tr>
+        <tr>
+          <td>The source URL (Optional):</td>
+          <td><input name="newQuestionAttributionURL" ng-model="newQuestionAttributionURL" type="text" size=70/></td>
+        </tr>
+        <tr>
+          <td>Your question:</td>
+          <td><input name="newQuestionText" ng-model="newQuestionText" type="text" size=70/></td>
+        </tr>
+      </tbody>
+    </table>
+    <p><button type="button" ng-click="createQuestion()">Ask a question</button></p>
+  
+    <h2>Questions</h2>
+  
+    <table>
+      <thead>
+        <tr><th>Question</th><th>Questioner</th><th>Submitter</th><th>Submission Date</th></tr>
+      </thead>
+      <tbody>
+        <tr ng-repeat="question in questions">
+          <td>{{ question.text }}</td>
+          <td>{{ question.questioner.name }}</td>
+          <td>{{ question.questioner.name }}</td>
+          <td>{{ question.submissionDate | date: 'h:mm:ss a M/d/yy' }}</td>
+        </tr>
+      </tbody>
+    </table>
+  
+    <h2>People</h2>
+
+    <p>* TODO List here the community members, as was done with questions above. 
+       Eventually it would be good to have stats here.</p>
+    
+    <hr/>
+    
+    <p>This page was authored by {{ author }}.</p>
+  </div>
+</body>
+</html>

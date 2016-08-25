@@ -5,6 +5,7 @@ A system to collect and refine questions, answers, and reasons.
 ## Release Notes
 
 7/11/16 Initial project publication, including design documents 
+8/25/16 Basic use case (recording questions) completed
 
 ## Status
 
@@ -46,7 +47,9 @@ See the [design](documentation/Design.md) page for details.
 
 ## Use Cases
 
-1. Ask/show questions (The most basic use case). A website where you can ask questions and see the list of questions that have been asked including information about who asked the question and when they asked it.
+1. Ask/show questions (The most basic use case). A website where you can ask questions and 
+   see the list of questions that have been asked including information about who asked the 
+   question and when they asked it.
   1. Ask a Question
      1. Web Service
          1. Design 
@@ -64,16 +67,10 @@ See the [design](documentation/Design.md) page for details.
 
 ## TODO 
 
-* Implement the most basic use case (Questions support)
-  1. Make a service API and client -- to run locally, TDD
-     1. In-memory -- Reuse Jot code
-         1. persons: 
-           1. POST -- continue at PersonsEndpointTest. Get it to pass...
-           2. GET 
-         2. questions: POST, GET
-     2. With persistence 
-  2. Implement Angular UI to access that API  
+* Rename this file?
 * Prioritize this list
+* Try implementing a service in Go
+* Use Swagger to design the services
 * Add these questions
   * Should I use Dropbox to replicate my github workspace?
   * What is the Reasons project?
@@ -81,6 +78,7 @@ See the [design](documentation/Design.md) page for details.
   * Why should I contribute to the Reasons project?
   * Why did I publish the cli project?
   * What's a good tutorial for the Reddit API?
+  * Could there be ETI in our solar system? 
 * Move the design methodology page -- should probably just be a link on the design page to a general mattmunz methodology page
 * This project needs a better name?
 * Identify more use cases

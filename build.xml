@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- TODO Migrate this to MShell/Babe. -->
+<project name="Reasons">
+  
+  <description>Commands for building and managing Reasons server instances</description>
+
+  <property file="build.properties"/>
+
+  <include file="../Babe/source/xml/WebService.build.xml" as=""/>
+  
+  <!-- TODO Does not distinguish buildtime from runtime dependencies. Should do that for better perf. -->
+  <!-- TODO Bug: These paths are not validated to exist before invoking javac. Fix this after MShell migration. -->
+  <path id="service.dependencies.path">
+
+    <!-- External dependencies -->
+    <pathelement location="${resourcesDirectory}/MongoDB/mongodb-driver/bson-3.0.4.jar"/>
+    <pathelement location="${resourcesDirectory}/MongoDB/mongodb-driver/mongodb-driver-3.0.4.jar"/>
+    <pathelement location="${resourcesDirectory}/MongoDB/mongodb-driver/mongodb-driver-core-3.0.4.jar"/>
+    
+    <!-- Runtime dependencies -->
+    <pathelement location="${resourcesDirectory}/Guava/guava-18.0.jar"/>
+  </path>
+</project>
