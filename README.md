@@ -51,51 +51,19 @@ See the [design](documentation/Design.md) page for details.
    see the list of questions that have been asked including information about who asked the 
    question and when they asked it.
   1. Ask a Question
-     1. Web Service
-         1. Design 
-         2. Implementation   
-     2. Web UI
-         1. Design X
-         2. Implementation
   2. List all Questions
-     1. Web Service
-         1. Design X
-         2. Implementation  
-     2. Web UI
-         1. Design X
-         2. Implementation
 
 ## TODO 
 
-* Rename this file?
+* Try implementing a service in Go 
 * Prioritize this list
-* Try implementing a service in Go
 * Use Swagger to design the services
-* Add these questions
-  * Should I use Dropbox to replicate my github workspace?
-  * What is the Reasons project?
-  * Why should I be interested in the reasons project?
-  * Why should I contribute to the Reasons project?
-  * Why did I publish the cli project?
-  * What's a good tutorial for the Reddit API?
-  * Could there be ETI in our solar system? 
+* Add more questions
 * Move the design methodology page -- should probably just be a link on the design page to a general mattmunz methodology page
 * This project needs a better name?
-* Identify more use cases
-  * Implement authentication
-  * Deploy to a shared instance (hosted, perhaps Firebase)
-  * Get a domain name  
-  * Support for plain propositions
-  * Support for supporting arguments
-  * Support for arguments against the proposition
-  * Implement the following arguments/questions "What is the Reasons project?", 
-    "Why should I be interested in the reasons project?", "Why should I contribute to the Reasons project?", "should jury selection take demographics of the community into account?", and all questions from design mockup.
-  * Search of various kinds
-  * Deduplication
-  * Voting/moderation 
+* Identify more use cases 
 * Explain the domain model syntax
-* Replace the API design with standard description format like Swagger
-* Look into integration with Wikidata?
+* Research Wikidata?
 * ... 
 
 ## Contact
