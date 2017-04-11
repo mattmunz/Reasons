@@ -5,9 +5,9 @@ reasons.
 
 ## Release Notes
 
-4/10/17 Implementation using Firebase 
-8/25/16 Basic use case (recording questions) completed
-7/11/16 Initial project publication, including design documents 
+* 4/10/17 Implementation using Firebase 
+* 8/25/16 Basic use case (recording questions) completed
+* 7/11/16 Initial project publication, including design documents 
 
 ## Status
 
