@@ -19,21 +19,40 @@ All objects have a field like the following unless stated otherwise.
 
 * Name (unique)
 
-### Question
+### Question :: Statement
+
+### Statement
 
 * Text
-* Questioner :: Person
+* Author :: Person
+* Submitter :: Person
+* SubmissionDate
+* AttributionURL (Optional) -- _A resource that supports the claim that the questioner is in fact the author of the question._
+
+### Argument
+
+* Proposition :: Statement
+* Support :: [Statement]
+* Author :: Person
+* Submitter :: Person
+* SubmissionDate
 * AttributionURL (Optional) -- _A resource that supports the claim that the questioner is in fact the author of the question._
 
 ### PersonRepository
 
-* create :: (Name) -> Person -- _TODO Authentication should be used here to prevent impersonation._
+* add :: (Name) -> Person -- _TODO Authentication should be used here to prevent impersonation._
 * get :: (Name) -> Person 
 
 ### QuestionRepository
 
-* create :: (Text, Person, URL) -> Question | AlreadyExistsError(Question)
+* add :: (Text, Person, URL) -> Question | AlreadyExistsError(Question)
 * get :: [Question] 
+* getSimilarQuestions :: (Question) -> [Question]
+
+### AnswerRepository
+
+* add :: (Question, Statement) -> ()
+* get :: (Question) -> [Statement]
 
 ### Web Service APIs
 
@@ -51,6 +70,11 @@ For the following methods, all responses/request bodies are in JSON.
 
 These [UI mockups](https://cdn.rawgit.com/mattmunz/Reasons/master/documentation/ReasonsHome.Mockup.html) are really rough but should give a sense of 
 how the application is intended to work, structurally. 
+
+## Architecture
+
+There are two prototypes. The primary one (Owl) has a Firebase back end and a Javascript 
+UI. An older prototype (Duck) has a Java ReST back end and an AngularJS UI.  
 
 ## Author
 

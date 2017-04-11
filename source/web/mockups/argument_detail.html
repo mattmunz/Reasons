@@ -1,0 +1,45 @@
+<!doctype html>
+
+<!-- TODO Refactor this with index.html -->
+
+<!-- TODO Pare this down to a more minimal thing, and then merge with the existing reasons UI index.html -->
+
+<html lang="en">
+<head>
+  <link id="head-link" rel="import" href="../head.html"/>
+  <link id="splash_and_header-link" rel="import" href="../splash_and_header.html"/>
+
+  <title>Reasons</title>
+  <script>USE_SPLASH = false; </script>  
+  <script src="../js/initialize.js"></script>
+</head>
+<!-- TODO Get rid of as many of these classes as possible -->
+<body>
+  <div id="content-container" class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+    <main class="mdl-layout__content mdl-color--grey-100">
+      <!-- TODO Improve the style -->  
+      <section class="mockup">
+        <h1>
+          <a href="question_detail.html">
+            The sky is blue because molecules in the air scatter blue light from the sun more than 
+            they scatter red light.
+          </a>
+        </h1>
+        <p>Source: <a href="http://math.ucr.edu/home/baez/physics/General/BlueSky/blue_sky.html">http://math.ucr.edu/home/baez/physics/General/BlueSky/blue_sky.html</a></p>
+        <p>By Philip Gibbs. Submitted by Matt Munz on 7/12/17</p>
+        <p>[<a href="#">Edit</a>] [<a href="#">Sounds right</a>] [<a href="#">Sounds wrong</a>]</p>
+        <h2>Support</h2>
+        <ul>
+          <li><a href="statement_detail.html">The air contains molecules like...</a> [<a href="#">Sounds right</a>] [<a href="#">Sounds wrong</a>]</li>
+          <li><a href="statement_detail.html">Blue light is scattered by molecules like...</a> [<a href="#">Sounds right</a>] [<a href="#">Sounds wrong</a>]</li>
+          <li>[<a href="#">Add support</a>]</li>
+        </ul>
+      </section>
+    </main>
+  </div>
+  
+  <script src="../js/view.js"></script>
+  <script src="../js/repository.js"></script>
+  <script src="../js/controller.js"></script>
+</body>
+</html>

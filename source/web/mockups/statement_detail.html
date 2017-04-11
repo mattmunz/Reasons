@@ -1,0 +1,48 @@
+<!doctype html>
+
+<!-- TODO Refactor this with index.html -->
+
+<!-- TODO Pare this down to a more minimal thing, and then merge with the existing reasons UI index.html -->
+
+<html lang="en">
+<head>
+  <link id="head-link" rel="import" href="../head.html"/>
+  <link id="splash_and_header-link" rel="import" href="../splash_and_header.html"/>
+
+  <title>Reasons</title>
+  <script>USE_SPLASH = false; </script>
+  <script src="../js/initialize.js"></script>
+</head>
+<!-- TODO Get rid of as many of these classes as possible -->
+<body>
+  <div id="content-container" class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+    <main class="mdl-layout__content mdl-color--grey-100">
+      <!-- TODO Improve the style -->  
+      <section class="mockup">
+        <h1>
+          The sky is blue because molecules in the air scatter blue light from the sun more than 
+          they scatter red light.
+        </h1>
+        <p>Source: <a href="http://math.ucr.edu/home/baez/physics/General/BlueSky/blue_sky.html">http://math.ucr.edu/home/baez/physics/General/BlueSky/blue_sky.html</a></p>
+        <p>By Philip Gibbs. Submitted by Matt Munz on 7/12/17</p>
+        <p>[<a href="#">Edit</a>] [<a href="#">Sounds right</a>] [<a href="#">Sounds wrong</a>]</p>
+        <h2>Arguments in favor</h2>
+        <ul>
+          <li><a href="argument_detail.html">Philip Gibbs' argument</a></li>
+          <li><a href="argument_detail.html">Joe Smith's argument</a></li>
+          <li>[<a href="argument_detail.html">Add an argument in favor</a>]</li>
+        </ul>
+        <h2>Arguments against</h2>
+        <ul>
+          <li><a href="argument_detail.html">Bill Sample's argument</a></li>
+          <li>[<a href="argument_detail.html">Add an argument against</a>]</li>
+        </ul>
+      </section>
+    </main>
+  </div>
+  
+  <script src="../js/view.js"></script>
+  <script src="../js/repository.js"></script>
+  <script src="../js/controller.js"></script>
+</body>
+</html>

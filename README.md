@@ -1,11 +1,13 @@
 # Reasons
 
-A system to collect and refine questions, answers, and reasons.
+A [system](https://mattmunz.github.io/Reasons) to collect and refine questions, answers, and 
+reasons.
 
 ## Release Notes
 
-7/11/16 Initial project publication, including design documents 
+4/10/17 Implementation using Firebase 
 8/25/16 Basic use case (recording questions) completed
+7/11/16 Initial project publication, including design documents 
 
 ## Status
 
@@ -15,18 +17,26 @@ There are currently just some ideas and preliminary designs and UI mockups (see 
 
 ### Initial idea
 
-Many years ago, an idea that started me down the road to the notion of the Reasons project was an idea for a website that one could go to get a concise explication of the case, for and against, a 
+Many years ago, an idea that started me down the road to the notion of the Reasons project was an 
+idea for a website that one could go to get a concise explication of the case, for and against, a 
 proposition such as "You should vote for Ralph Nader". 
 
-On the page for the proposition, you could click "I agree", "I disagree", or "tell me more" for any of the supporting arguments, which themselves would have pages like 
+On the page for the proposition, you could click "I agree", "I disagree", or "tell me more" for any 
+of the supporting arguments, which themselves would have pages like 
 "Voting is a responsibility of all citizens" or "Beltway experience is necessary for a 
 president to be successful".     
 
 This system seemed like a better way to make up my mind than dredging through news articles and 
 books, which can be fun to read at times, but often contain lots of information I don't 
-really need. This makes sense as these sources are designed for a wide audience and generally don't leverage all of the flexibility w.r.t. content that HTML/HTTP offers.
+really need. This makes sense as these sources are designed for a wide audience and generally don't 
+leverage all of the flexibility w.r.t. content that HTML/HTTP offers.
 
-In contrast to those more traditional sources, this hypothetical website could be personalized. By knowing your favored set of propositions (let's just call them beliefs) the site could more smoothly navigate you towards new ideas (even seemingly foreign ones) that you could adopt. Likewise, the system could be used to intentionally browse for ideas that challenge your mindset -- ideas that lie on the boundary between your world view and another -- ideas that require you to challenge some (but not too many) of your beliefs.     
+In contrast to those more traditional sources, this hypothetical website could be personalized. By 
+knowing your favored set of propositions (let's just call them beliefs) the site could more smoothly 
+navigate you towards new ideas (even seemingly foreign ones) that you could adopt. Likewise, the 
+system could be used to intentionally browse for ideas that challenge your mindset -- ideas that 
+lie on the boundary between your world view and another -- ideas that require you to challenge some 
+(but not too many) of your beliefs.     
 
 ### Goals
 
@@ -52,19 +62,10 @@ See the [design](documentation/Design.md) page for details.
    question and when they asked it.
   1. Ask a Question
   2. List all Questions
-
-## TODO 
-
-* Try implementing a service in Go 
-* Prioritize this list
-* Use Swagger to design the services
-* Add more questions
-* Move the design methodology page -- should probably just be a link on the design page to a general mattmunz methodology page
-* This project needs a better name?
-* Identify more use cases 
-* Explain the domain model syntax
-* Research Wikidata?
-* ... 
+2. Answer a question. Navigate to the question detail and select "Add an answer". A form allows 
+   entering a statement.
+3. Provide reasons. Navigate to the statement detail and select "Add an argument in favor/against".
+   A form allows entering a statement. 
 
 ## Contact
 
