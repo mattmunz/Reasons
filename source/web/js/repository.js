@@ -133,7 +133,7 @@ function getRef(path) {
 function update(paths, data) {
   var updates = {};
   paths.forEach(function(path) { updates[path] = data; });
-  return getRef().update(updates);
+  return firebase.database().ref().update(updates);
 }
 
 function createKey(path) { return getRef(path).push().key; }
