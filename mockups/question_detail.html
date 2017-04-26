@@ -1,0 +1,45 @@
+<!doctype html>
+
+<!-- TODO Pare this down to a more minimal thing, and then merge with the existing reasons UI index.html -->
+
+<html lang="en">
+<head>
+  <link rel="import" href="../head.html">
+  <link id="head-link" rel="import" href="../head.html"/>
+  <link id="splash_and_header-link" rel="import" href="../splash_and_header.html"/>
+
+  <title>Reasons</title>
+  <script>USE_SPLASH = false; </script>
+  <script src="../js/initialize.js"></script>
+</head>
+<body>
+  <!-- TODO Get rid of as many of these classes as possible -->
+  <div id="content-container" class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+    <main class="mdl-layout__content mdl-color--grey-100">
+      <!-- TODO Improve the style -->  
+      <section class="mockup">
+        <h1>Why is the sky blue?</h1>
+        <p>By Matt Munz; Submitted 7/12/17</p>
+        <p>[<a href="#">Edit</a>]</p>
+        <h2>Answers</h2>
+        <ul>
+          <!-- TODO Make these links -->
+          <li><a href="statement_detail.html">The sky is blue because light...</a> [<a href="#">Sounds right</a>] [<a href="#">Sounds wrong</a>]</li>
+          <li><a href="statement_detail.html">The sky is blue because trees...</a> [<a href="#">Sounds right</a>] [<a href="#">Sounds wrong</a>]</li>
+          <li>[<a href="#">Add an answer</a>]</li>
+        </ul>
+        <h2>Similar Questions</h2>
+        <ul>
+          <!-- TODO Make these links -->
+          <li><a href="#">What makes the sky blue?</a></li>
+          <li><a href="#">What color is the sky usually, and why?</a></li>
+        </ul>
+      </section>
+    </main>
+  </div>
+
+  <script src="../js/view.js"></script>
+  <script src="../js/repository.js"></script>
+  <script src="../js/controller.js"></script>
+</body>
+</html>
